@@ -23,11 +23,19 @@ export default function ExperiencePage() {
     },
 
     {
-      role: "air censor",
-      org: "North Carolina State University",
-      time: "2024 — Present",
-      detail:
-        "Designed a smart assembly line with Micro800 PLC, Factory I/O, and Mosquitto MQTT broker. Integrated Modbus data acquisition, Flask dashboards, and PostgreSQL storage for digital twin simulation.",
+      role: "Ær Metrica Air Sensor",
+      org: "Product Innovation Institute",
+      time: "2023",
+      detail: [
+        "Our product can evaluate the air quality inside and outside of a vehicle. The information is used to automate onboard systems and improve cabin air quality for a healthier life, while capturing exterior pollution levels into an unprecedented database.",
+        "CLEAN AIR, CLEAR MIND",
+        "Know how much pollution is around you",
+        "Breathe better cabin air with automation",
+        "Build the world's most detailed air quality map",
+        "As a prototype, we built our air sensor that can detect Carbon Monoxide, Carbon Dioxide, Ammonia, Nitrogen Dioxide, and PM2.5 directly into a Dodge Challenger and used the air intake as the perfect sensor port!"
+      ],
+
+
     },
 
     {
