@@ -36,7 +36,7 @@ export default function ExperiencePage() {
       ],
       images: [
         "/images/sensor5.jpg",
-        "/images/sensor4.jpg",
+        "/images/sensor6.jpg",
         "/images/sensor1.jpg",
       ],
       imageMaxH: "max-h-[240px]",
@@ -66,7 +66,7 @@ export default function ExperiencePage() {
         "We conducted multiple iterations of the hull design, systematically refining the geometry and structural integrity before finalizing the optimized configuration. Distinct additive manufacturing techniques were employed for different components: material jetting for the hull, selective laser sintering for the rudder, and stereolithography for the propeller. Following fabrication, an electric motor and stepper motor were integrated into the assembly as the control system, resulting in a fully functional remote-controlled speed boat prototype",
       media: [
         { type: "image", src: "/images/Boat1.jpg" },
-        { type: "video", src: "/videos/boatv5.mp4" }, 
+        { type: "video", src: "/videos/boatv2.mp4" }, 
         { type: "image", src: "/images/Boat3.jpg" },
       ],
       imageCols: "sm:grid-cols-3",
