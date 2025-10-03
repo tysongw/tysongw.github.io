@@ -35,7 +35,7 @@ export default function ExperiencePage() {
         "Our product can evaluate the air quality inside and outside of a vehicle. The information is used to automate onboard systems and improve cabin air quality for a healthier life, while capturing exterior pollution levels into an unprecedented database. As a prototype, we built our air sensor that can detect Carbon Monoxide, Carbon Dioxide, Ammonia, Nitrogen Dioxide, and PM2.5 directly into a Dodge Challenger and used the air intake as the perfect sensor port!"
       ],
       images: [
-        "/images/sensor3.jpg",
+        "/images/sensor5.jpg",
         "/images/sensor4.jpg",
         "/images/sensor1.jpg",
       ],
