@@ -7,15 +7,16 @@ export default function ExperiencePage() {
       org: "Founding Team Member",
       time: "2022-2023",
       detail: [
-        "Designed and implemented a Qt-based graphical user interface, integrated it with an embedded processor, and performed system loop testing to validate real-time performance, stability, and reliability under operational load",
-        "Assisted in building Linux systems using the Yocto toolchain and supported firmware deployment",
-        "Represented VersaWare at Consumer Electronics Show (CES) 2023; led technical demos and engaged potential partners during seed funding, highlighting product-market fit and technical differentiators",
+        "I was incredibly excited to join VersaWare Technologies, a startup based inside the Centrepolis Accelerator. Every week I participated in training sessions there, gaining hands-on knowledge about entrepreneurship, fundraising, and product development, all while collaborating closely with five other teammates.",
+        "My role focused on the technical backbone of the product. I designed and implemented a Qt-based graphical user interface, integrated it with an embedded processor, and carried out system loop testing to ensure real-time performance, stability, and reliability under operational load. These efforts were critical in taking our very first prototype and transforming it into a production-ready second-generation machine within just six months. This new generation product featured an interactive touchscreen, a rich set of recipes, and AI-assisted meal recommendations: a leap that turned our vision into something tangible and exciting.",
+        "One of the proudest moments of this journey was representing VersaWare at CES 2023. There, I showcased our product to investors, journalists, and potential partners, sharing not only the technical innovations but also the energy and passion of building something groundbreaking from the ground up.",
       ],
       images: [
         "/images/versaboard.jpg",
         "/images/versabowl.jpg",
         "/images/versame.jpg",
       ],
+      imageMaxH: "max-h-[300px]",
       link: {
         label: "CES 2023 News Article",
         href: "https://us.aving.net/news/articleView.html?idxno=50125",
@@ -27,24 +28,70 @@ export default function ExperiencePage() {
       org: "Product Innovation Institute",
       time: "2023",
       detail: [
-        "Our product can evaluate the air quality inside and outside of a vehicle. The information is used to automate onboard systems and improve cabin air quality for a healthier life, while capturing exterior pollution levels into an unprecedented database.",
         "CLEAN AIR, CLEAR MIND",
         "Know how much pollution is around you",
         "Breathe better cabin air with automation",
         "Build the world's most detailed air quality map",
-        "As a prototype, we built our air sensor that can detect Carbon Monoxide, Carbon Dioxide, Ammonia, Nitrogen Dioxide, and PM2.5 directly into a Dodge Challenger and used the air intake as the perfect sensor port!"
+        "Our product can evaluate the air quality inside and outside of a vehicle. The information is used to automate onboard systems and improve cabin air quality for a healthier life, while capturing exterior pollution levels into an unprecedented database. As a prototype, we built our air sensor that can detect Carbon Monoxide, Carbon Dioxide, Ammonia, Nitrogen Dioxide, and PM2.5 directly into a Dodge Challenger and used the air intake as the perfect sensor port!"
       ],
-
-
+      images: [
+        "/images/sensor3.jpg",
+        "/images/sensor4.jpg",
+        "/images/sensor1.jpg",
+      ],
+      imageMaxH: "max-h-[240px]",
     },
 
     {
-      role: "CNC",
-      org: "NCSU ISE Department",
-      time: "2022 — Present",
+      role: "Computer numerical control machine tools (CNC)",
+      org: "CAMAL, Center for Additive Manufacturing and Logistics",
+      time: "2024",
       detail:
-        "Conducting research on inkjet printing of PEDOT:PSS for flexible electronics. Focus on waveform optimization, droplet dynamics, and film characterization (conductivity, roughness, transfer printing).",
+        "I became proficient in operating a wide range of instruments and machining tools at the center, including 3D scanning, 3D printing, CNC machining, various cutting processes, and surveying techniques. As a project, I transformed a block of aluminum alloy into the shape of the NCSU Wolfpack logo using CNC machining, and then combined laser cutting with 3D printing to turn it into a unique piece of art!",
+      images: [
+        "/images/CNC3.jpg",
+        "/images/CNC2.jpg",
+        "/images/CNC1.jpg",
+        "/images/CNC4.jpg",
+      ],
+      imageCols: "sm:grid-cols-4",
+      imageMaxH: "max-h-[330px]",
     },
+
+    {
+      role: "3D Printed Speed Boat",
+      org: "CAMAL, Center for Additive Manufacturing and Logistics",
+      time: "2024",
+      detail:
+        "We conducted multiple iterations of the hull design, systematically refining the geometry and structural integrity before finalizing the optimized configuration. Distinct additive manufacturing techniques were employed for different components: material jetting for the hull, selective laser sintering for the rudder, and stereolithography for the propeller. Following fabrication, an electric motor and stepper motor were integrated into the assembly as the control system, resulting in a fully functional remote-controlled speed boat prototype",
+      media: [
+        { type: "image", src: "/images/Boat1.jpg" },
+        { type: "video", src: "/videos/boatv5.mp4" }, 
+        { type: "image", src: "/images/Boat3.jpg" },
+      ],
+      imageCols: "sm:grid-cols-3",
+      imageMaxH: "max-h-[330px]",
+    },
+
+    {
+      role: "Adding...",
+     /* org: "CAMAL, Center for Additive Manufacturing and Logistics",
+      time: "2024",
+      detail:
+        "We conducted multiple iterations of the hull design, systematically refining the geometry and structural integrity before finalizing the optimized configuration. Distinct additive manufacturing techniques were employed for different components: material jetting for the hull, selective laser sintering for the rudder, and stereolithography for the propeller. Following fabrication, an electric motor and stepper motor were integrated into the assembly as the control system, resulting in a fully functional remote-controlled speed boat prototype",
+      media: [
+        { type: "image", src: "/images/Boat1.jpg" },
+        { type: "video", src: "/videos/boatv5.mp4" }, 
+        { type: "image", src: "/images/Boat3.jpg" },
+      ],
+      imageCols: "sm:grid-cols-3",
+      imageMaxH: "max-h-[330px]",     */
+    },
+      
+
+
+
+
   ];
 
   return (
@@ -78,17 +125,28 @@ export default function ExperiencePage() {
               </p>
             )}
 
-            {/* 图片：3列平行（小屏自动单列） */}
-            {exp.images && exp.images.length > 0 && (
-              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
-                {exp.images.map((src, j) => (
-                  <img
-                    key={j}
-                    src={src}
-                    alt={`${exp.role} image ${j + 1}`}
-                    className="mx-auto max-w-[200px] rounded-lg border border-white/10 object-cover"
-                  />
-                ))}
+            {/* 图片：列数与高度可按条目控制（兼容 images 或 media） */}
+            {(exp.images?.length || exp.media?.length) && (
+              <div className={`mt-4 grid grid-cols-1 gap-4 ${exp.imageCols ?? "sm:grid-cols-3"}`}>
+                {(exp.media ?? exp.images.map((src) => ({ type: "image", src }))).map((m, j) =>
+                  m.type === "video" ? (
+                    <video
+                      key={j}
+                      src={m.src}
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className={`mx-auto h-auto w-auto ${exp.imageMaxH ?? "max-h-[250px]"} rounded-lg border border-white/10 object-contain`}
+                    />
+                  ) : (
+                    <img
+                      key={j}
+                      src={m.src}
+                      alt={`${exp.role} media ${j + 1}`}
+                      className={`mx-auto h-auto w-auto ${exp.imageMaxH ?? "max-h-[250px]"} rounded-lg border border-white/10 object-contain`}
+                    />
+                  )
+                )}
               </div>
             )}
 
