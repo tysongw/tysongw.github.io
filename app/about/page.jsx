@@ -118,7 +118,11 @@ export default function AboutPage() {
               <p className="text-l font-semibold text-white tracking-tight">
                 Xi’an No. 3 High School （西安市第三中学）
               </p>
-             
+               <img
+                src="/images/sanzhong.png"
+                alt="sanzhong Middle School Logo"
+                className="w-11 h-11 rounded-md border border-white/10 opacity-80 hover:opacity-100 hover:scale-105 hover:shadow-lg transition"
+              />
             </div>
 
             <div className="flex items-center gap-3 mt-2">
