@@ -79,7 +79,7 @@ export default function AboutPage() {
               Southfield, Michigan, USA
             </p>
             <div className="mt-2 text-sm leading-relaxed">
-              <p>B.Eng. in Materials Science and Engineering</p>
+              <p>Master of science in Biomedical Engineering</p>
             </div>
 
           </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
 
             <div className="flex items-center gap-3 mt-2">
               <p className="text-l font-semibold text-white tracking-tight">
-                Primary School Affiliated to Xi’an University of Architecture and Technology （西安建筑科技大学附属小学）
+                Affiliated Primary School of Xi’an University of Architecture and Technology （西安建筑科技大学附属小学）
               </p>
               <img
                 src="/images/XJ.jpg"
