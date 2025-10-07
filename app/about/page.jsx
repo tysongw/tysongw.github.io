@@ -71,7 +71,7 @@ export default function AboutPage() {
                 <img
                   src="/images/LTU.png"
                   alt="LTU Logo"
-                  className="w-12 h-12 rounded-md border border-white/10 opacity-80 hover:opacity-100 hover:scale-105 hover:shadow-lg transition"
+                  className="w-11 h-11 rounded-md border border-white/10 opacity-80 hover:opacity-100 hover:scale-105 hover:shadow-lg transition"
                 />
               </a>
             </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
                 Affiliated Middle School of Xi’an Jiaotong University （西安交通大学附属中学）
               </p>
               <img
-                src="/images/xjtu.png"
+                src="/images/XJTU.png"
                 alt="XJTU Middle School Logo"
                 className="w-11 h-11 rounded-md border border-white/10 opacity-80 hover:opacity-100 hover:scale-105 hover:shadow-lg transition"
               />
