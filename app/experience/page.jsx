@@ -74,6 +74,22 @@ export default function ExperiencePage() {
     },
 
     {
+      role: "Something",
+      org: "somewhere",
+      time: "2023",
+      detail:
+        "Industrial 4.0",
+      media: [
+        { type: "video", src: "/videos/PLC2.mp4" }, 
+        { type: "video", src: "/videos/PLC3.mp4" },
+        { type: "image", src: "/images/PLC1.png" },
+      ],
+      imageCols: "sm:grid-cols-3",
+      imageMaxH: "max-h-[330px]",     
+    },
+
+
+    {
       role: "Adding...",
      /* org: "CAMAL, Center for Additive Manufacturing and Logistics",
       time: "2024",
