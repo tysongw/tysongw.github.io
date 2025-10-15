@@ -66,7 +66,7 @@ export default function ExperiencePage() {
         "We conducted multiple iterations of the hull design, systematically refining the geometry and structural integrity before finalizing the optimized configuration. Distinct additive manufacturing techniques were employed for different components: material jetting for the hull, selective laser sintering for the rudder, and stereolithography for the propeller. Following fabrication, an electric motor and stepper motor were integrated into the assembly as the control system, resulting in a fully functional remote-controlled speed boat prototype",
       media: [
         { type: "image", src: "/images/Boat1.jpg" },
-        { type: "video", src: "/videos/boatv2.mp4" }, 
+        { type: "video", src: "/videos/boatv2.mp4" },
         { type: "image", src: "/images/Boat3.jpg" },
       ],
       imageCols: "sm:grid-cols-3",
@@ -74,38 +74,60 @@ export default function ExperiencePage() {
     },
 
     {
-      role: "Something",
-      org: "somewhere",
+      role: "Laser-Powder Bed Fusion",
+      org: "CAMAL, Center for Additive Manufacturing and Logistics",
       time: "2023",
-      detail:
-        "Industrial 4.0",
+      detail: "I worked on an exciting project focused on additive manufacturing of hyperuniform force chain network structures using Laser Powder Bed Fusion (L-PBF) on a Concept Laser system with a 50 μm laser beam. The goal was to print these intricate networks at different size scales and systematically investigate how geometric parameters—such as feature size and overhang angle—affect the structural survivability and print fidelity. Through this process, I explored the limits of laser-based metal printing for highly complex, architected materials, revealing how subtle design and process variations can determine whether a structure withstands the thermal and mechanical stresses during fabrication.",
       media: [
-        { type: "video", src: "/videos/PLC2.mp4" }, 
+        { type: "image", src: "/images/SLM1.jpg" },
+        { type: "image", src: "/images/SLM2.png" },
+        { type: "image", src: "/images/SLM3.png" },
+      ],
+      imageCols: "sm:grid-cols-3",
+      imageMaxH: "max-h-[230px]",
+    },
+
+    {
+      role: "Digital Twin Automation",
+      org: "Mechatronics and Automation Center",
+      time: "2023",
+      detail: "I developed and integrated a complete PLC-based control system. I programmed the PLC to coordinate with photoelectric sensors, transmitting real-time signals to a Python gateway for data processing. Through the MQTT protocol, I established seamless communication between edge devices and the cloud, storing the collected data in a PostgreSQL database. Finally, I connected the system with Factory I/O’s digital twin environment for real-time visualization and monitoring, achieving a fully interactive and intelligent manufacturing setup.",
+      media: [
+        { type: "video", src: "/videos/PLC2.mp4" },
         { type: "video", src: "/videos/PLC3.mp4" },
         { type: "image", src: "/images/PLC1.png" },
       ],
       imageCols: "sm:grid-cols-3",
-      imageMaxH: "max-h-[330px]",     
+      imageMaxH: "max-h-[330px]",
     },
 
+    {
+      role: "Project Management",
+      org: "Real Sales Construction Project ",
+      time: "2025",
+      detail: "Adding...",
+      /* media: [
+        { type: "video", src: "/videos/PLC2.mp4" },
+        { type: "video", src: "/videos/PLC3.mp4" },
+        { type: "image", src: "/images/PLC1.png" },
+      ],
+      imageCols: "sm:grid-cols-3",
+      imageMaxH: "max-h-[330px]", */
+    },
 
     {
       role: "Adding...",
-     /* org: "CAMAL, Center for Additive Manufacturing and Logistics",
-      time: "2024",
-      detail:
-        "We conducted multiple iterations of the hull design, systematically refining the geometry and structural integrity before finalizing the optimized configuration. Distinct additive manufacturing techniques were employed for different components: material jetting for the hull, selective laser sintering for the rudder, and stereolithography for the propeller. Following fabrication, an electric motor and stepper motor were integrated into the assembly as the control system, resulting in a fully functional remote-controlled speed boat prototype",
+      /*org: "",
+      time: "",
+      detail: "",
       media: [
-        { type: "image", src: "/images/Boat1.jpg" },
-        { type: "video", src: "/videos/boatv5.mp4" }, 
-        { type: "image", src: "/images/Boat3.jpg" },
+        { type: "video", src: "/videos/PLC2.mp4" },
+        { type: "video", src: "/videos/PLC3.mp4" },
+        { type: "image", src: "/images/PLC1.png" },
       ],
       imageCols: "sm:grid-cols-3",
-      imageMaxH: "max-h-[330px]",     */
+      imageMaxH: "max-h-[330px]", */
     },
-      
-
-
 
 
   ];
@@ -128,7 +150,7 @@ export default function ExperiencePage() {
               <span className="text-sm text-white/50">{exp.time}</span>
             </div>
 
-            {/* detail：字符串 → 段落；数组 → 多段落（无小圆点） */}
+            {/* detail：字符串 → 段落；数组 → 多段落 */}
             {Array.isArray(exp.detail) ? (
               <div className="mt-3 space-y-2 text-sm text-white/80 leading-relaxed">
                 {exp.detail.map((d, j) => (
@@ -141,27 +163,37 @@ export default function ExperiencePage() {
               </p>
             )}
 
-            {/* 图片：列数与高度可按条目控制（兼容 images 或 media） */}
+            {/* 图片 / 视频渲染：支持 per-media 宽度 */}
             {(exp.images?.length || exp.media?.length) && (
-              <div className={`mt-4 grid grid-cols-1 gap-4 ${exp.imageCols ?? "sm:grid-cols-3"}`}>
-                {(exp.media ?? exp.images.map((src) => ({ type: "image", src }))).map((m, j) =>
-                  m.type === "video" ? (
-                    <video
-                      key={j}
-                      src={m.src}
-                      controls
-                      playsInline
-                      preload="metadata"
-                      className={`mx-auto h-auto w-auto ${exp.imageMaxH ?? "max-h-[250px]"} rounded-lg border border-white/10 object-contain`}
-                    />
-                  ) : (
-                    <img
-                      key={j}
-                      src={m.src}
-                      alt={`${exp.role} media ${j + 1}`}
-                      className={`mx-auto h-auto w-auto ${exp.imageMaxH ?? "max-h-[250px]"} rounded-lg border border-white/10 object-contain`}
-                    />
-                  )
+              <div
+                className={`mt-4 grid grid-cols-1 gap-4 ${
+                  exp.imageCols ?? "sm:grid-cols-3"
+                }`}
+              >
+                {(exp.media ??
+                  exp.images.map((src) => ({ type: "image", src }))).map(
+                  (m, j) =>
+                    m.type === "video" ? (
+                      <video
+                        key={j}
+                        src={m.src}
+                        controls
+                        playsInline
+                        preload="metadata"
+                        className={`mx-auto h-auto ${
+                          exp.imageMaxH ?? "max-h-[250px]"
+                        } ${m.wide ? "w-full" : "w-auto"} rounded-lg border border-white/10 object-contain`}
+                      />
+                    ) : (
+                      <img
+                        key={j}
+                        src={m.src}
+                        alt={`${exp.role} media ${j + 1}`}
+                        className={`mx-auto h-auto ${
+                          exp.imageMaxH ?? "max-h-[250px]"
+                        } ${m.wide ? "w-full" : "w-auto"} rounded-lg border border-white/10 object-contain`}
+                      />
+                    )
                 )}
               </div>
             )}
