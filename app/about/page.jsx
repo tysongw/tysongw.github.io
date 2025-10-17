@@ -4,7 +4,25 @@ export default function AboutPage() {
   return (
     <div className="mx-auto max-w-6xl px-6">
       {/* 页面标题 */}
-      <h1 className="text-3xl font-bold">About</h1>
+      <div className="mt-2 flex items-center justify-between">
+        <h1 className="text-3xl font-bold">About</h1>
+
+        {/* 按钮：在新标签页打开 PDF */}
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative overflow-hidden rounded-xl border border-sky-400/40 
+               bg-white/10 px-6 py-3 text-sm font-semibold text-sky-200 
+               shadow-[0_0_12px_rgba(56,189,248,0.4)] backdrop-blur-md 
+               transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(56,189,248,0.7)] 
+               hover:text-white"
+        >
+          <span className="relative z-10">RESUME</span>
+          {/* 内部发光渐变层 */}
+          <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-sky-500/20 via-cyan-400/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"></span>
+        </a>
+      </div>
 
       {/* 介绍段 */}
       <section className="mt-8 text-white/80 leading-relaxed">
@@ -12,8 +30,20 @@ export default function AboutPage() {
           Intro.
         </h2>
         <p className="mb-4">
-          I’m <span className="text-white font-semibold">Tiansong Wang</span>.
+          Hi, I'm <span className="text-white font-semibold">Tiansong Wang</span>. I am a Ph.D. candidate in Industrial and Systems Engineering at North Carolina State University, with an academic journey that spans materials science, advanced manufacturing, and engineering management. My broad interests have led me to explore both the technical and organizational aspects of engineering, from hands-on research in flexible electronics and printing technologies to strategic thinking in project planning and system optimization. This diverse background has equipped me with a strong foundation in scientific research as well as a practical understanding of management and collaboration within complex engineering environments.
         </p>
+        <p>
+          Outside of my research, I like to stay active and keep exploring new experiences. I enjoy sports and traveling, and I'm always excited to try something unfamiliar. Recently, I've been spending more time on tennis, frisbee, and juggling. When I'm relaxing, I love playing games on Switch and PS5. (Thanks to the university library's collection, I get to discover new titles every month) 
+        </p>
+        <p>
+           .
+        </p>
+        <p>
+          <span className="text-white font-semibold">By the way, I am currently looking for internship opportunities.</span>
+        </p>
+
+
+
         {/* …… 你的介绍内容 …… */}
       </section>
 
@@ -48,9 +78,8 @@ export default function AboutPage() {
             </p>
             <div className="mt-2 text-sm leading-relaxed">
               <p>
-                Ph.D. in Industrial and Systems Engineering (Advanced Manufacturing)
+                Ph.D. in Industrial and Systems Engineering (Advanced Manufacturing & Engineering Management)
               </p>
-              <p>Master of Engineering Management</p>
               <p>Minor in Mechanical Engineering</p>
             </div>
 
@@ -107,7 +136,7 @@ export default function AboutPage() {
               Shenyang, Liaoning, China
             </p>
             <div className="mt-2 text-sm leading-relaxed">
-              <p>Bachelor of Science in Materials Science</p>
+              <p>Bachelor of Science in Materials Science and Engineering</p>
             </div>
 
           </div>

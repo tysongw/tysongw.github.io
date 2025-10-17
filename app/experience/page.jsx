@@ -205,9 +205,14 @@ export default function ExperiencePage() {
                   href={exp.link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block rounded-md bg-sky-500 px-3 py-1 text-sm text-white hover:bg-sky-400 transition"
+                  className="relative inline-block overflow-hidden rounded-lg border border-sky-400/40 
+                            bg-white/10 px-4 py-2 text-sm font-semibold text-sky-200 
+                            shadow-[0_0_12px_rgba(56,189,248,0.4)] backdrop-blur-md 
+                            transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(56,189,248,0.7)] 
+                            hover:text-white"
                 >
-                  {exp.link.label} ↗
+                  <span className="relative z-10">{exp.link.label} </span>
+                  <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-sky-500/20 via-cyan-400/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"></span>
                 </a>
               </div>
             )}
