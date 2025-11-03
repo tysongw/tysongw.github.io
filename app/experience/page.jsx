@@ -43,6 +43,21 @@ export default function ExperiencePage() {
     },
 
     {
+      role: "HAILIANG",
+      org: "Quality Engineer Intern",
+      time: "2020",
+      detail: "During my summer internship at Hailiang Group, one of the world’s leading manufacturers of copper-based materials, I worked in the production and quality inspection division for copper alloy tubes. I actively participated in multiple stages of the manufacturing process, including melting and casting, extrusion, rolling, and drawing, gaining a comprehensive understanding of large-scale metal forming workflows. I was responsible for assisting with process optimization and performing mechanical and dimensional inspections on copper alloy tubes to ensure compliance with industrial standards. My contributions helped improve inspection accuracy and enhance the consistency of production quality.",
+      media: [
+        { type: "image", src: "/images/hailiang3.png" },
+        { type: "image", src: "/images/hailiang2.png" },
+        { type: "image", src: "/images/hailiang1.png" },
+      ],
+      imageCols: "sm:grid-cols-3",
+      imageMaxH: "max-h-[330px]",
+    },
+
+
+    {
       role: "Computer numerical control machine tools (CNC)",
       org: "CAMAL, Center for Additive Manufacturing and Logistics",
       time: "2024",
@@ -100,6 +115,8 @@ export default function ExperiencePage() {
       imageCols: "sm:grid-cols-3",
       imageMaxH: "max-h-[330px]",
     },
+
+
 
     {
       role: "Project Management",

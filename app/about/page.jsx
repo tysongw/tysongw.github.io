@@ -7,21 +7,30 @@ export default function AboutPage() {
       <div className="mt-2 flex items-center justify-between">
         <h1 className="text-3xl font-bold">About</h1>
 
-        {/* 按钮：在新标签页打开 PDF */}
-        <a
-          href="/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative overflow-hidden rounded-xl border border-sky-400/40 
-               bg-white/10 px-6 py-3 text-sm font-semibold text-sky-200 
-               shadow-[0_0_12px_rgba(56,189,248,0.4)] backdrop-blur-md 
-               transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(56,189,248,0.7)] 
-               hover:text-white"
-        >
-          <span className="relative z-10">RESUME</span>
-          {/* 内部发光渐变层 */}
-          <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-sky-500/20 via-cyan-400/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"></span>
-        </a>
+        <div className="flex items-center gap-4">
+            {/* 图片（发光柔雾质感） */}
+          <img
+            src="/images/anshangge1.png"
+            alt="An Shang Ge"
+            className="w-28 h-28 rounded-lg object-cover opacity-95 hover:opacity-100 transition duration-300"
+          />
+
+          {/* 按钮：在新标签页打开 PDF */}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative overflow-hidden rounded-xl border border-sky-400/40 
+                      bg-white/10 px-6 py-3 text-sm font-semibold text-sky-200 
+                      shadow-[0_0_12px_rgba(56,189,248,0.4)] backdrop-blur-md 
+                      transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(56,189,248,0.7)] 
+                      hover:text-white"
+          >
+            <span className="relative z-10">RESUME</span>
+            {/* 内部发光渐变层 */}
+            <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-sky-500/20 via-cyan-400/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"></span>
+          </a>
+        </div>
       </div>
 
       {/* 介绍段 */}
