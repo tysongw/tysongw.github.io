@@ -3,66 +3,140 @@
 export default function ResearchPage() {
   const cards = [
     {
-      title: "1",
+      title: "Neural probe",
       //subtitle: "Flexible Electronics · Waveform Optimization",
      // period: "2023 — Present",
       desc:
-        "1111",
-      //media: { type: "image", src: "/images/versaboard.jpg" },
+        "blablabla",
+      media: { type: "image", src: "/images/research1.png" },
       //tags: ["Inkjet", "PEDOT:PSS", "Flexible"],
       //links: [{ label: "Preprint", href: "/papers/inkjet_pedot_preprint.pdf" }],
       
     },
     {
-      title: "2",
+      title: "Inkjet printing optimization",
       //subtitle: "PLC · MQTT · Flask · PostgreSQL",
       //period: "2024 — Present",
       desc:
-        "2222",
-      //media: { type: "video", src: "/videos/PLC3.mp4" },
+        "blablabla",
+      media: { type: "image", src: "/images/research2.png" },
       //tags: ["Digital Twin", "PLC", "MQTT"],
       //links: [],
     },
     {
-      title: "3",
+      title: "Nonplanar transfer printing",
       //subtitle: "Concept Laser · 50 μm beam",
       //period: "2023 — 2024",
       desc:
-        "3333",
-      //media: { type: "image", src: "/images/SLM1.jpg" },
+        "blablabla",
+      media: { type: "image", src: "/images/research3.png" },
       //tags: ["AM (L-PBF)", "Metals"],
       //links: [],
     },
     {
-      title: "4",
+      title: "Juggling",
       //subtitle: "Electrochemical Sensing on Flexible Substrates",
       //period: "2024 — Present",
       desc:
-        "4444",
-      //media: { type: "image", src: "/images/sensor1.jpg" },
+        "blablabal",
+      media: { type: "video", src: "/videos/fun.mp4" },
       //tags: ["OECT", "Sensors"],
       //links: [],
     },
     {
-      title: "5",
+      title: "Graphene based pressure sensor",
       //subtitle: "Hull (MJ), Rudder (SLS), Prop (SLA)",
       //period: "2024",
       desc:
-        "5555",
-      //media: { type: "image", src: "/images/Boat1.jpg" },
+        "blablabla",
+      media: { type: "image", src: "/images/research4.png" },
       //tags: ["AM", "Design"],
       //links: [],
     },
     {
-      title: "6",
+      title: "Soft electronics",
       //subtitle: "CAMAL · CNC Machining + Laser",
       //period: "2024",
       desc:
-        "6666",
-      //media: { type: "image", src: "/images/CNC1.jpg" },
+        "blablabla",
+      media: { type: "image", src: "/images/research5.png" },
       //tags: ["CNC", "Fabrication"],
       //links: [],
     },
+    {
+      title: "Fix PS5 controller drift",
+      //subtitle: "CAMAL · CNC Machining + Laser",
+      //period: "2024",
+      desc:
+        "blablabla",
+      media: { type: "image", src: "/images/research6.png" },
+      //tags: ["CNC", "Fabrication"],
+      //links: [],
+    },
+    {
+      title: "Joule-heating-driven underwater robot",
+      //subtitle: "CAMAL · CNC Machining + Laser",
+      //period: "2024",
+      desc:
+        "blablabla",
+      media: { type: "video", src: "/videos/hydrogel.mp4" },
+      //tags: ["CNC", "Fabrication"],
+      //links: [],
+    },
+    {
+      title: "Chromogenic hydrogel",
+      //subtitle: "CAMAL · CNC Machining + Laser",
+      //period: "2024",
+      desc:
+        "blablabla",
+      media: { type: "video", src: "/videos/color.mp4" },
+      //tags: ["CNC", "Fabrication"],
+      //links: [],
+    },
+    {
+      title: "Support-free 3D printed conductive hydrogel",
+      //subtitle: "CAMAL · CNC Machining + Laser",
+      //period: "2024",
+      desc:
+        "blablabla",
+      media: { type: "video", src: "/videos/3D.mp4" },
+      //tags: ["CNC", "Fabrication"],
+      //links: [],
+    },
+    {
+      title: "LSPR based pH sensor",
+      //subtitle: "CAMAL · CNC Machining + Laser",
+      //period: "2024",
+      desc:
+        "blablabla",
+      media: { type: "image", src: "/images/research7.png" },
+      //tags: ["CNC", "Fabrication"],
+      //links: [],
+    },
+    {
+      title: "Hydrogel based temperature sensor",
+      //subtitle: "CAMAL · CNC Machining + Laser",
+      //period: "2024",
+      desc:
+        "blablabla",
+      media: { type: "image", src: "/images/research8.png" },
+      //tags: ["CNC", "Fabrication"],
+      //links: [],
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   ];
 
   return (
@@ -74,7 +148,12 @@ export default function ResearchPage() {
       <section className="mt-6">
         <p className="text-white/90 leading-relaxed">
           I feel truly fortunate that every piece of research I do stems from my genuine curiosity and passion.<br />
-          And I’m deeply grateful to everyone who has supported and encouraged me along the way.
+          And I’m deeply grateful to everyone who has supported and encouraged me along the way.<br />
+          The papers are merely by-products of my curiosity-driven exploration of the fascinating world of science.<br />
+          If you’re interested in what I’ve published, please visit my Google Scholar.<br />
+          Here, I just want to share some fun photos and videos from my experiments.<br />
+          Many more were lost when my phone once broke, yet they live on vividly in my memory, reminders that the most meaningful discoveries often lie not in the results, but in the process itself.<br />
+          ...
         </p>
       </section>
 
