@@ -7,7 +7,7 @@ export default function ResearchPage() {
       //subtitle: "Flexible Electronics · Waveform Optimization",
      // period: "2023 — Present",
       desc:
-        "blablabla",
+        "Our neural probe is still in the research stage. We are currently conducting in-vitro experiments to detect substances such as dopamine and glutamate.",
       media: { type: "image", src: "/images/research1.png" },
       //tags: ["Inkjet", "PEDOT:PSS", "Flexible"],
       //links: [{ label: "Preprint", href: "/papers/inkjet_pedot_preprint.pdf" }],
@@ -18,7 +18,7 @@ export default function ResearchPage() {
       //subtitle: "PLC · MQTT · Flask · PostgreSQL",
       //period: "2024 — Present",
       desc:
-        "blablabla",
+        "In the piezoelectric-driven inkjet printhead, we investigated the influence of waveform design on the droplet diameter and ejection velocity.",
       media: { type: "image", src: "/images/research2.png" },
       //tags: ["Digital Twin", "PLC", "MQTT"],
       //links: [],
@@ -28,7 +28,7 @@ export default function ResearchPage() {
       //subtitle: "Concept Laser · 50 μm beam",
       //period: "2023 — 2024",
       desc:
-        "blablabla",
+        "See this beautiful sphere? Our inkjet-printed pattern was perfectly transferred onto its surface, and it’s remarkably robust!",
       media: { type: "image", src: "/images/research3.png" },
       //tags: ["AM (L-PBF)", "Metals"],
       //links: [],
@@ -38,7 +38,7 @@ export default function ResearchPage() {
       //subtitle: "Electrochemical Sensing on Flexible Substrates",
       //period: "2024 — Present",
       desc:
-        "blablabal",
+        "Hmmm, still practicing it... during a break after being subbed out in a tennis match.",
       media: { type: "video", src: "/videos/fun.mp4" },
       //tags: ["OECT", "Sensors"],
       //links: [],
@@ -48,7 +48,7 @@ export default function ResearchPage() {
       //subtitle: "Hull (MJ), Rudder (SLS), Prop (SLA)",
       //period: "2024",
       desc:
-        "blablabla",
+        "A sensor we built together with undergraduate students! The internal structure is stunning, it looks just like a crystal!",
       media: { type: "image", src: "/images/research4.png" },
       //tags: ["AM", "Design"],
       //links: [],
@@ -58,7 +58,7 @@ export default function ResearchPage() {
       //subtitle: "CAMAL · CNC Machining + Laser",
       //period: "2024",
       desc:
-        "blablabla",
+        "The moment my hand glowed for the first time...",
       media: { type: "image", src: "/images/research5.png" },
       //tags: ["CNC", "Fabrication"],
       //links: [],
@@ -68,7 +68,7 @@ export default function ResearchPage() {
       //subtitle: "CAMAL · CNC Machining + Laser",
       //period: "2024",
       desc:
-        "blablabla",
+        "After playing 2K, Dr. Li's controller started drifting, we probably need to replace the joystick analog.",
       media: { type: "image", src: "/images/research6.png" },
       //tags: ["CNC", "Fabrication"],
       //links: [],
@@ -78,7 +78,7 @@ export default function ResearchPage() {
       //subtitle: "CAMAL · CNC Machining + Laser",
       //period: "2024",
       desc:
-        "blablabla",
+        "An unfinished project... using silver nanowires to generate Joule heating for powering an underwater robot...",
       media: { type: "video", src: "/videos/hydrogel.mp4" },
       //tags: ["CNC", "Fabrication"],
       //links: [],
@@ -88,7 +88,7 @@ export default function ResearchPage() {
       //subtitle: "CAMAL · CNC Machining + Laser",
       //period: "2024",
       desc:
-        "blablabla",
+        "This is a fun demo, a thermochromic hydrogel reveals the letters NCSU when the temperature changes.",
       media: { type: "video", src: "/videos/color.mp4" },
       //tags: ["CNC", "Fabrication"],
       //links: [],
@@ -98,7 +98,7 @@ export default function ResearchPage() {
       //subtitle: "CAMAL · CNC Machining + Laser",
       //period: "2024",
       desc:
-        "blablabla",
+        "An unfinished project... but a fascinating one, we used silver nanowires and PEG hydrogel to 3D print conductive gel circuits without any supporting structures.",
       media: { type: "video", src: "/videos/3D.mp4" },
       //tags: ["CNC", "Fabrication"],
       //links: [],
@@ -108,7 +108,7 @@ export default function ResearchPage() {
       //subtitle: "CAMAL · CNC Machining + Laser",
       //period: "2024",
       desc:
-        "blablabla",
+        "We arranged gold nanoparticles in an ordered manner within a hydrogel matrix. Under different pH conditions, the hydrogel exhibits varying degrees of swelling, which alters the spacing between nanoparticles, the resulting optical changes are then detected by an optical sensor.",
       media: { type: "image", src: "/images/research7.png" },
       //tags: ["CNC", "Fabrication"],
       //links: [],
@@ -118,7 +118,7 @@ export default function ResearchPage() {
       //subtitle: "CAMAL · CNC Machining + Laser",
       //period: "2024",
       desc:
-        "blablabla",
+        "It’s just a simple temperature sensor, but assembling the incubator, camera, and sensor together was an incredibly satisfying process.",
       media: { type: "image", src: "/images/research8.png" },
       //tags: ["CNC", "Fabrication"],
       //links: [],
